@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container1{
+            height: 250px;
+            border: 3px solid blue;
+            display: flex;
+            margin-bottom: 16px;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            /*flex-flow: atalho do wrap e direction;*/
+        }
+
+        .Flexbox div{
+            border: 2px solid orange;
+            width: 300px;
+            margin: 15px;
+        }
+
+        .container2{
+            justify-content: space-evenly;
+            height: 250px;
+            border: 3px solid blue;
+            display: flex;
+            margin-bottom: 16px;
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+        }
+
+        .container2 div{
+            width: 60px;
+            margin: 0;
+        
+        }
+
+        .container3{
+            justify-content: center;
+            border: 3px solid blue;
+            display: flex;
+            height: 250px;
+            align-items: flex-end;
+            align-content: center;
+        
+
+        }
+
+        .container3 div{
+            width: 30px;
+
+
+        }
+        .container4{
+            justify-content: flex-end;
+            border: 3px solid blue;
+            display: flex;
+            height: 250px;
+            align-items: flex-start;
+            margin:10px;
+            flex-direction: column;
+
+        
+
+        }
+        .container4 div{
+            width: 30px;
+            background-color: yellow;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Flexbox container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+
+    </div>
+
+    <div class="Flexbox container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+
+    </div>
+
+    <div class="Flexbox container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+
+    </div>
+
+    <div class="Flexbox container4">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+
+    </div>
+</body>
+</html>

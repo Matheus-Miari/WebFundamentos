@@ -1,0 +1,129 @@
+body {
+    background-color: #004d49; /* Verde Claro - Cor de fundo */
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+    letter-spacing: 4px;
+}
+
+.hero {
+    display: flex;
+    background-color: #004d49; /* Verde Escuro - Cabeçalho */
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+.hero__ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.hero__ul a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+a.hero__nav--active {
+    background-color: #01fff4; /* Ciano - Link ativo */
+    color: #004d49; /* Verde Escuro */
+    pointer-events: none;
+}
+
+.hero__nav a:hover {
+    text-decoration: underline;
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-planos {
+    flex: 1;
+    background-color: #00968f; /* Ciano - Cartões de preços */
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-planos__title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #004d49; /* Verde Escuro */
+    margin-top: 0;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.pricing-planos p {
+    margin-top: 0;
+}
+
+.pricing-planos__preco {
+    font-size: 34px;
+}
+
+.pricing-planos__conteudos {
+    margin: 0 0 35px;
+    color: #004d49; /* Verde Escuro - Texto */
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.pricing-planos__conteudos li::marker {
+    color: #004d49; /* Verde Escuro - Marcadores */
+}
+
+.pricing-planos__cta {
+    text-decoration: none;
+    color: white; /* Texto branco */
+    background-color: #004d49; /* Verde Escuro */
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: all 0.3s ease-in-out; /* Suaviza a transição ao hover */
+}
+
+.pricing-planos__cta:hover {
+    background-color: #01fff4; /* Ciano para destaque no hover */
+    color: #004d49; /* Verde Escuro no texto */
+    outline: 2px solid #004d49; /* Borda para reforçar o destaque */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Intensifica a sombra */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    padding: 16px;
+    text-align: center; 
+    align-items: center;
+}

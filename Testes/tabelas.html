@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        th{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 16px;
+        }
+        table{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            background-color: #ccc;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela</caption>
+        <thead>
+            <tr>
+                <th>Area</th>
+                <th>Cursos</th>
+                <th>Preços</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Design</td>
+                <td>InD</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Ilustrator</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
