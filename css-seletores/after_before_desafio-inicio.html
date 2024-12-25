@@ -5,6 +5,40 @@
     <meta charset="UTF-8">
 
     <title>Seletores de atributos</title>
+    <style>
+        body{
+            background-color: #f8f4f444;
+        }
+        a{
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        a[target="_blank"]::after{
+            content: url(imagens/newWindow-icon.png);
+            background-color: aliceblue;
+            margin: 1rem;
+        }
+        br+a::before{
+            content: url(imagens/pdf-icon.gif);
+            margin-right: 1rem;
+        }
+        
+        input[type="checkbox"]:not(:disabled)+label {
+            color: red;
+        }
+        input[type="checkbox"]:checked+label {
+            color: green;
+        }
+
+        input[type="checkbox"]:disabled+label {
+            color: blue;
+        }
+        
+        li li:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
 
 </head>
 
